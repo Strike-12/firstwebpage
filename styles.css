@@ -1,0 +1,99 @@
+/* Global Styles for all HTML pages */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background color for the entire page */
+body {
+    background-color: purple;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Add rounded corners to common elements (industry-standard border-radius) */
+button,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+select,
+textarea {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style for buttons */
+button,
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #3700b3;
+}
+
+/* Style for links */
+a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for headers */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Style for paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Style for images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style for navigation bars */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style for footers */
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
