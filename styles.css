@@ -7,12 +7,46 @@
     box-sizing: border-box;
 }
 
-/* Set the background color for the entire page */
+/* Set the background color for the entire page to baby blue */
 body {
-    background-color: purple;
+    background-color: #89CFF0; /* Baby blue */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+/* Style for the name "Elsen Keena" with white letters */
+.name-container {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Valentine-style birthday section */
+.birthday-container {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff69b4; /* Pink for Valentine's style */
+    font-size: 1.5rem;
+    animation: pulse 1.5s infinite;
+}
+
+.birthday-container::before {
+    content: "❤️ ";
+}
+
+.birthday-container::after {
+    content: " ❤️";
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 /* Add rounded corners to common elements (industry-standard border-radius) */
