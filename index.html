@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
+    <style>
+        body {
+            background-color: #89CFF0;
+            min-height: 100vh;
+            margin: 0;
+            padding: 24px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: purple;
+            margin: 0 0 8px;
+        }
+
+        p {
+            color: #FF69B4;
+            margin: 0;
+        }
+
+        a {
+            color: #FF69B4;
+        }
+
+        .image-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .profile-image {
+            display: block;
+            width: min(280px, 38vw);
+            max-height: 34vh;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Webpage!</h1>
-    <img src="images/profile.jpg" alt="Profile Image" width="300">
+    <main>
+        <h1>elsen keena</h1>
+        <p>My birthday is <a href="https://www.google.com/goto?url=CAESZgHrOzAVelYBnjrV5IoKsPFb_YjDPXpXRzB8J74dOKcWbpjPhPNAbaw_UUtoGYL1mSja1BnPmnqlZ7V9dwkooW7ClLkuxEbsmZgdDQnY25353oIntSjtZv3jAlmWQ3D4EKN48yFFwQ" target="_blank" rel="noopener noreferrer">February 6th, 2012</a>.</p>
+        <div class="image-row">
+            <img class="profile-image" src="images/cartoon-character.jpeg" alt="Cartoon character carrying a designer bag">
+            <img class="profile-image" src="images/yam-nose.jpg" alt="A large yam nose">
+        </div>
+    </main>
 </body>
-    <img src="images/profile.jpg" alt="My Image" width="300">
 </html>
